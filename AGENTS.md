@@ -6,4 +6,5 @@ Browser tools that export ChatGPT and Google Gemini conversations to Markdown, P
 - The `README.md` links these files by raw GitHub URL, so do not rename or move them.
 - `core/` (selector cascade, DOM analyzer, message detector with confidence scores) is not imported by the exporters. `archived/` holds old exporter versions; `temporal/` holds old planning notes.
 - Test an exporter by pasting it into the console on a real ChatGPT or Gemini conversation.
+- Work and commit in the checkout the harness gives you (T3 worktree or Amp orb); do not create worktrees yourself. Land work trunk-based: rebase onto the default branch, run the checks, push straight to it (no pull requests).
 - When the ChatGPT or Gemini UI changes, prefer selectors in this order: data attributes (`[data-testid*="..."]`), ARIA roles, semantic elements, classes (last resort).
